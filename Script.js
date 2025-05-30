@@ -60,7 +60,7 @@ function toggleDarkMode() {
 // WhatsApp & Email
 function handleMobileButtonClick() {
   if (/Mobi|Android/i.test(navigator.userAgent)) {
-    window.location.href = "tel:+9788893014";
+    window.location.href = "tel:9788893014";
   } else {
     window.open("tel:+9788893014", "_blank");
   }
