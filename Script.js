@@ -68,9 +68,9 @@ function handleMobileButtonClick() {
 
 function handleWhatsappButtonClick() {
   if (/Mobi|Android/i.test(navigator.userAgent)) {
-    window.location.href = "https://wa.me/9788893014";
+    window.location.href = "https://wa.me/919788893014";
   } else {
-    window.open("https://web.whatsapp.com/send?phone=9788893014", "_blank");
+    window.open("https://web.whatsapp.com/send?phone=919788893014", "_blank");
   }
 }
 
