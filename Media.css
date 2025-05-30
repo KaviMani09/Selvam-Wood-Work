@@ -621,7 +621,7 @@ body.dark-mode .animation-text1 {
         flex-direction: column;
         justify-content: flex-start;
         width: 100%;
-        height: 700px;
+        height: 800px;
     }
 
     .containment {
@@ -675,7 +675,7 @@ body.dark-mode .animation-text1 {
     }
 
     .image-container .image {
-        width: 80%;
+        width: 100%;
     }
 
     /* About */
