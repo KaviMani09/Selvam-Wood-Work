@@ -60,17 +60,17 @@ function toggleDarkMode() {
 // WhatsApp & Email
 function handleMobileButtonClick() {
   if (/Mobi|Android/i.test(navigator.userAgent)) {
-    window.location.href = "tel:+7823999388";
+    window.location.href = "tel:+9788893014";
   } else {
-    window.open("tel:+7823999388", "_blank");
+    window.open("tel:+9788893014", "_blank");
   }
 }
 
 function handleWhatsappButtonClick() {
   if (/Mobi|Android/i.test(navigator.userAgent)) {
-    window.location.href = "https://wa.me/7823999388";
+    window.location.href = "https://wa.me/9788893014";
   } else {
-    window.open("https://web.whatsapp.com/send?phone=7823999388", "_blank");
+    window.open("https://web.whatsapp.com/send?phone=9788893014", "_blank");
   }
 }
 
