@@ -1,21 +1,31 @@
 // Menu Button
-const menuButton = document.querySelector(".Header_MenuButton");
-const menu = document.querySelector(".Menu_Menu");
-const headerCont = document.querySelector(".Header_List");
+  const menuButton = document.querySelector(".Header_MenuButton");
+  const menuIcon = document.getElementById("menuIcon");
+  const menu = document.querySelector(".Menu_Menu");
+  const headerCont = document.querySelector(".Header_List");
 
-function toggleMenu() {
-  headerCont.classList.toggle("Header_MenuOpen");
-  menu.classList.toggle("Menu_Open");
-}
+  function toggleMenu() {
+    headerCont.classList.toggle("Header_MenuOpen");
+    menu.classList.toggle("Menu_Open");
 
-menuButton.addEventListener("click", toggleMenu);
-document.addEventListener("click", function (event) {
-  if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+    // Toggle between ☰ (menu) and ✖ (close)
     if (menu.classList.contains("Menu_Open")) {
-      toggleMenu();
+      menuIcon.textContent = "Close";
+    } else {
+      menuIcon.textContent = "Menu";
     }
   }
-});
+
+  menuButton.addEventListener("click", toggleMenu);
+
+  document.addEventListener("click", function (event) {
+    if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+      if (menu.classList.contains("Menu_Open")) {
+        toggleMenu();
+      }
+    }
+  });
+
 
 // TYPING ANIMATION
 const texts = ["மரம் வேலைகள்", "மரம் டிசைன்கள்", "கபோர்டு வேலைகள்"];
